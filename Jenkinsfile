@@ -9,7 +9,6 @@ stages {
 stage('Clone GIT repo') {
 steps {
 sh 'echo cloning git repository'
-16
 }
 }
 stage('Build') {
