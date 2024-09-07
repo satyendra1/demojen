@@ -2,7 +2,7 @@ pipeline {
 agent {
 docker {
 image 'centos:latest'
-label 'centos8'
+label 'w2'
 }
 }
 stages {
