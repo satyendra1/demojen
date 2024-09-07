@@ -1,23 +1,26 @@
 pipeline {
-  agent {
-    node {
-      label 'w1'
-    }
-
-  }
-  stages {
-    stage('scmrepo') {
-      steps {
-        sh 'echo "hey baby"'
-        sh 'echo "hi hello"'
-      }
-    }
-
-    stage('buildtriggred') {
-      steps {
-        sh 'echo "initiated buildv4"'
-      }
-    }
-
-  }
+agent {
+docker {
+image 'centos:latest'
+label 'centos8'
+}
+}
+stages {
+stage('Clone GIT repo') {
+steps {
+sh 'echo cloning git repository'
+16
+}
+}
+stage('Build') {
+steps {
+sh 'echo "Building the code"'
+}
+}
+stage('Deploy') {
+steps {
+sh 'echo "Deploying the software on Kubernetes"'
+}
+}
+}
 }
