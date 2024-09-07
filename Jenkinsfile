@@ -15,7 +15,7 @@ pipeline {
 
     stage('buildtriggred') {
       steps {
-        sh 'echo "initiated buildv2"'
+        sh 'echo "initiated buildv3"'
       }
     }
 
