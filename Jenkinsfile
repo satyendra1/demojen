@@ -10,6 +10,7 @@ stage('Clone GIT repo') {
 steps {
 sh 'yum install git -y'
 sh 'git version'
+sh 'echo satya'
 }
 }
 stage('Build') {
