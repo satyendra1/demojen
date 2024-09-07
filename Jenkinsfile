@@ -1,7 +1,7 @@
 pipeline {
 agent {
 docker {
-image 'centos:latest'
+image 'centos7'
 label 'w2'
 }
 }
