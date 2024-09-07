@@ -1,14 +1,21 @@
 pipeline {
   agent {
     node {
-      label 'w2'
+      label 'w1'
     }
 
   }
   stages {
-    stage('satyarepo') {
+    stage('scmrepo') {
       steps {
-        sh 'echo "hhhhhhh"'
+        sh 'echo "hey baby"'
+        sh 'echo "hi hello"'
+      }
+    }
+
+    stage('buildtriggred') {
+      steps {
+        sh 'echo "initiated buildv4"'
       }
     }
 
