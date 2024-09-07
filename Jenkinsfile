@@ -8,6 +8,7 @@ label 'w2'
 stages {
 stage('Clone GIT repo') {
 steps {
+sh 'yum install git -y'
 sh 'git version'
 }
 }
