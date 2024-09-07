@@ -8,7 +8,7 @@ label 'w2'
 stages {
 stage('Clone GIT repo') {
 steps {
-sh 'echo cloning git repository'
+sh 'git version'
 }
 }
 stage('Build') {
